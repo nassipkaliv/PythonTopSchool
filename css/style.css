@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500;800&display=swap');
+
+.intro {
+  width: 100%;
+  background: linear-gradient(96deg, rgba(13, 28, 206, 0.50) 0%, rgba(255, 255, 255, 0.00) 100%);
+  background-image: url('/assets/img/introbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+
+}
+
+.intro-title {
+  background: linear-gradient(91deg, #4512B7 35.08%, #9652FF 95.62%, #5798FF 118.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 67.2px; 
+  margin-bottom: 18px;
+}
+
+.intro-subtitle {
+  color: #171717;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'JetBrains Mono', monospace; 
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 67.2px; /* 105% */
+  margin-top: 32px;
+}
+
+.intro-description {
+  text-align: center;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px; /* 225% */
+  letter-spacing: -0.72px;
+  margin-top: 24px;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+  margin-top: 20px;
+}
+
+.intro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-item p {
+  color: #171717;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  letter-spacing: -0.54px;
+}
+
+.intro-btn {
+  border-radius: 25px;
+  background: #4512B7;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 1110px;
+  height: 50px;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.86px; /* 142.875% */
+}
+
+.intro-btn:hover {
+  color: #000;
+  transition: .3s;
+}
+
+.about-project {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.about-project .container-fluid {
+  padding: 70px 80px;
+}
+
+.title-row {
+  display: flex;
+  flex-direction: row;
+  gap: 487px;
+}
+
+.project-title {
+  color: #9B84FF;
+  font-family: 'JetBrains Mono', monospace; 
+  font-size: 53px;
+  font-weight: 500;
+  line-height: 67.2px; /* 126.792% */
+  margin-bottom: 44px;
+}
+
+.project-container-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-container-item p {
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25.6px; /* 150.588% */
+  opacity: 0.65;
+  width: 549px;
+}
+
+.project-container-img {
+  margin-right: 30px;
+  width: 67px;
+  height: 67px;
+}
+
+.project-row {
+  gap: 200px;
+  margin-bottom: 90px;
+}
+
+.project-content {
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-content-row {
+  gap: 200px;
+  margin-bottom: 65px;
+}
+
+.content-item {
+  height: 195px;
+  border-radius: 20px;
+  border: 3px solid #9B84FF;
+  display: flex;
+  flex-direction: row;
+}
+
+.item-num {
+  color: #9B84FF;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 29px; /* 80.556% */
+  letter-spacing: -0.72px;
+  margin-top: 40px;
+}
+
+.content-item-container {
+  flex-direction: column;
+  margin-left: 12px;
+  margin-top: 35px;
+}
+
+.content-item-title {
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 25.6px; /* 80% */
+  opacity: 0.65;
+}
+
+.content-item-description {
+  color: #474747;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  letter-spacing: -0.54px;
+  opacity: 0.65;
+}
+
+.course-rates {
+  background: url('/assets/img/ratesbg.png');
+  background-size: cover;
+  width: 100%;
+  height: 1564px;
+  padding: 90px 50px;
+}
+
+.course-rates .title {
+  color: #4512B7;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'JetBrains Mono', monospace; 
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 67.2px; /* 105% */
+}
+
+.course-container {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-col {
+  margin-right: 30px;
+}
+
+.course-title {
+  color: rgba(51, 51, 51, 0.99);
+  font-family: 'Inter', sans-serif;
+  font-size: 45.375px;
+  font-weight: 500;
+  line-height: 57.6px; /* 126.942% */
+}
+
+.course-p {
+  color: rgba(51, 51, 51, 0.99);
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.6px; /* 150.588% */
+}
+
+.course-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.course-btn {
+  border-radius: 30px;
+  border: 1px solid #4512B7;
+  background: #4512B7;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 302px;
+  height: 60px;
+  padding: 19px 26px 19px 25px;
+  color: #F1F2F6;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.86px; 
+  justify-content: center;
+}
+
+.price {
+  color: rgba(69, 18, 183, 0.50);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px; /* 120% */
+  margin-left: 30px;
+}
