@@ -276,3 +276,11 @@
   line-height: 33.6px; /* 120% */
   margin-left: 30px;
 }
+
+.custom-footer {
+  height: 276px;
+  background: #CEDEFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
