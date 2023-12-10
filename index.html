@@ -192,7 +192,7 @@
           <h1 class="course-title">One-time lesson</h1>
           <p class="course-p">Get full information about the course, do a test assignment, learn the basics</p>
           <div class="course-bottom">
-            <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#purchaseModal">Purchase</button>
+            <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#OneTimeLesson">Purchase</button>
             <span class="price">350 $</span>
           </div>
         </div>
@@ -205,7 +205,7 @@
         <h1 class="course-title">Package offer</h1>
         <p class="course-p">Special offer! 6 one-time classes for the price of 4</p>
         <div class="course-bottom">
-          <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#purchaseModal">Purchase</button>
+          <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#PackageOffer">Purchase</button>
           <span class="price">1500 $</span>
         </div>
       </div>
@@ -218,7 +218,7 @@
       <h1 class="course-title">Learning without mentoring</h1>
       <p class="course-p">Complete the full course, communicate with your mentor during class hours</p>
       <div class="course-bottom">
-        <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#purchaseModal">Purchase</button>
+        <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#Mentors">Purchase</button>
         <span class="price">3000 $</span>
       </div>
     </div>
@@ -244,7 +244,7 @@
       <h1 class="course-title">One-time lesson</h1>
         <div class="course-description">
           <div class="course-bottom">
-            <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#purchaseModal">Purchase</button>
+            <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#OneTimeLesson">Purchase</button>
             <span class="price">350 $</span>
           </div>
           <div class="image-col">
@@ -258,21 +258,21 @@
       <h1 class="course-title">Package offer</h1>
         <div class="course-description">
           <div class="course-bottom">
-            <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#purchaseModal">Purchase</button>
+            <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#PackageOffer">Purchase</button>
             <span class="price">1500 $</span>
           </div>
           <div class="image-col">
             <img src="assets/img/courserate2.png" alt="1iamge" class="img-fluid" />
           </div>
         </div>
-        <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#purchaseModal">Purchase</button>
+        <p class="course-p">Special offer! 6 one-time classes for the price of 4</p>
         <div class="line"></div>
     </div>
     <div class="course-container">
       <h1 class="course-title">Learning without mentoring</h1>
         <div class="course-description">
           <div class="course-bottom">
-            <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#purchaseModal">Purchase</button>
+            <button class="btn course-btn" data-bs-toggle="modal" data-bs-target="#Mentors">Purchase</button>
             <span class="price">3000 $</span>
           </div>
           <div class="image-col">
@@ -313,7 +313,7 @@
     </a>
   </footer>
 
-  <div class="modal fade" id="fullTraining" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+  <div class="modal fade" id="OneTimeLesson" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <button class="close close-btn d-flex align-self-end" data-bs-dismiss="modal" aria-label="Close">
@@ -323,11 +323,65 @@
             </button>
             <div class="modal-body border-0">
                 <h1 class="modal-title-choose">You choose the tariff</h1>
-                <h1 class="modal-title-course">Full training</h1>
+                <h1 class="modal-title-course">One-time lesson</h1>
                 <h1 class="modal-title-choose">which includes:</h1>
-                <p class="modal-description">Take a full course with a mentor who will be happy to answer your questions 24/7</p>
+                <p class="modal-description">Get full information about the course, do a test assignment, learn the basics</p>
                 <p class="modal-description-manager">After paying for the course, the manager will contact you</p>
-                <span class="modal-price">5000 $</span>
+                <span class="modal-price">350 $</span>
+                <div class="modal-input">
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone number">
+                </div>
+                <div class="modal-input">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <button type="button" class="btn modal-btn mx-auto">Purchase</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="PackageOffer" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <button class="close close-btn d-flex align-self-end" data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                    <path d="M12 35.625L9.375 33L19.875 22.5L9.375 12L12 9.375L22.5 19.875L33 9.375L35.625 12L25.125 22.5L35.625 33L33 35.625L22.5 25.125L12 35.625Z" fill="#555555"/>
+                </svg>
+            </button>
+            <div class="modal-body border-0">
+                <h1 class="modal-title-choose">You choose the tariff</h1>
+                <h1 class="modal-title-course">Package offer</h1>
+                <h1 class="modal-title-choose">which includes:</h1>
+                <p class="modal-description">Special offer! 6 one-time classes for the price of 4</p>
+                <p class="modal-description-manager">After paying for the course, the manager will contact you</p>
+                <span class="modal-price">1500 $</span>
+                <div class="modal-input">
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone number">
+                </div>
+                <div class="modal-input">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <button type="button" class="btn modal-btn mx-auto">Purchase</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Mentors" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <button class="close close-btn d-flex align-self-end" data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                    <path d="M12 35.625L9.375 33L19.875 22.5L9.375 12L12 9.375L22.5 19.875L33 9.375L35.625 12L25.125 22.5L35.625 33L33 35.625L22.5 25.125L12 35.625Z" fill="#555555"/>
+                </svg>
+            </button>
+            <div class="modal-body border-0">
+                <h1 class="modal-title-choose">You choose the tariff</h1>
+                <h1 class="modal-title-course">Learning without mentoring</h1>
+                <h1 class="modal-title-choose">which includes:</h1>
+                <p class="modal-description">Complete the full course, communicate with your mentor during class hours</p>
+                <p class="modal-description-manager">After paying for the course, the manager will contact you</p>
+                <span class="modal-price">3000 $</span>
                 <div class="modal-input">
                     <input type="text" class="form-control" id="phoneNumber" placeholder="Phone number">
                 </div>
