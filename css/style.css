@@ -319,6 +319,7 @@ body {
 
   .intro {
     display: none;
+    background-image: url('/assets/img/introbgmobile.png');
   }
 
   .intro-mobile .container {
@@ -331,6 +332,7 @@ body {
 
   .intro-mobile {
     display: block !important;
+    background-image: url('/assets/img/introbgmobile.png');
   }
 
   .intro-title {
