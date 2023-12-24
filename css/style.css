@@ -782,6 +782,30 @@ body {
   background: transparent;
 }
 
+.modal-content {
+  background-image: url("../assets/img/modalbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+}
+
+.modal-title {
+  color: #000;
+  font-family: 'Nico Moji';
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 @media (max-width: 768px) {
 
   .intro {
