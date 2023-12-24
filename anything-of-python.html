@@ -15,11 +15,58 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+
+    @media (max-width: 768px) {
+
+      body {
+        background: url("assets/img/AnythingOfPythonbgMobile.png");
+      }
+
+      .why-phyton {
+      display: none !important;
+      }
+
+      .why-phyton-mobile {
+        display: flex !important;
+        padding: 60px 40px;
+        justify-content: center;
+      }
+
+      .whyp-title {
+        color: #000;
+        text-align: center;
+        font-family: 'Nico Moji';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.08px;
+      }
+
+      .whyp-description {
+        color: #000;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 200% */
+        letter-spacing: -1px;
+      }
+
+      .item-title {
+        font-size: 30px;
+      }
+
+      .item-description {
+        font-size: 15px;
+      }
+
+    } 
   </style>
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid why-phyton">
     <div class="whyp-title px-3">
       Why Python?
     </div>
@@ -57,7 +104,45 @@ In summary, learning the Python programming language not only provides practical
       </div>
     </div>
   </div>
+  </div>
 
+  <div class="container-fluid why-phyton-mobile d-none flex-column">
+    <div class="whyp-title">
+      Why python?
+    </div>  
+    <div class="whyp-description text-start">
+      In the contemporary world of information technology, the Python programming language rightfully holds a central place, providing developers with unique capabilities and exceptional tools for software development. Let's delve into the key aspects of why learning Python is becoming increasingly crucial and appealing to a wide range of individuals.
+    </div>
+    <div class="col-12 my-3">
+      <div class="project-content-item whyp">
+        <div class="item-title">1. Simplicity and Readability:</div>
+        <div class="item-description">Python is renowned for its simplicity and code readability. Its syntax resembles the English language, making it accessible even for beginners. This approach reduces the entry barrier and simplifies the learning curve for programming.</div>
+      </div>
+    </div>
+    <div class="col-12 my-3">
+      <div class="project-content-item whyp">
+        <div class="item-title">2. Active Community and 
+          Extensive Library:</div>
+        <div class="item-description">Python boasts one of the most active and supportive communities in the programming world. This ensures quick issue resolution and access to an extensive library of modules, simplifying development and reducing project timelines.</div>
+      </div>
+    </div>  
+    <div class="col-12 my-3">
+      <div class="project-content-item whyp">
+        <div class="item-title">3. Universality:</div>
+        <div class="item-description">
+          Python is a versatile language used in various domains, including web development, data analysis, machine learning, artificial intelligence, task automation, and more. This versatility makes it a sought-after tool in diverse professional fields.</div>
+      </div>
+    </div>
+    <div class="col-12 my-3">
+      <div class="project-content-item whyp">
+        <div class="item-title">4. Machine Learning and 
+          Artificial Intelligence:</div>
+        <div class="item-description">
+          Python is a primary language for developing applications in machine learning and artificial intelligence. Libraries such as TensorFlow and PyTorch provide powerful tools for creating and training models, making Python an integral component in this rapidly evolving field.
+        </div>
+    </div>
+    </div>
+  </div>
 </body>
 
 </html>

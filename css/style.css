@@ -832,19 +832,29 @@ body {
   .intro-mobile {
     display: block !important;
     background-image: url('../assets/img/introbgmobile.png');
+    height: 100vh;
   }
 
   .intro-title {
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'JetBrains Mono', monospace;
     font-size: 32px;
-    margin-bottom: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 67.2px; /* 210% */
   }
 
   .intro-subtitle {
+    color: #171717;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'JetBrains Mono', monospace;
     font-size: 32px;
-    line-height: 45px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #000;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px; /* 140.625% */
   }
 
   .intro-description {
@@ -878,7 +888,7 @@ body {
 
   .intro-item {
     border-radius: 30px;
-    border: 1px solid #9B84FF;
+    border: 3px solid #000;
     padding-top: 12px;
   }
 
@@ -902,10 +912,9 @@ body {
   }
 
   .project-container-img {
-    border-radius: 5px;
-    border: 1px solid #9B84FF;
+    border-radius: 100px;
+    border: 3px solid #000;
     background: rgba(255, 255, 255, 0.00);
-    box-shadow: 0px 2px 25px 2px rgba(0, 0, 0, 0.07);
     padding: 10px 33.97px 13px 33.37px;
     width: auto;
     height: auto;
@@ -913,8 +922,14 @@ body {
   }
 
   .project-container-item p {
+    color: #000;
     text-align: center;
-    width: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -1px;
     margin-top: 20px;
   }
 
@@ -929,24 +944,32 @@ body {
     flex-direction: column;
   }
 
-  .item-num {
-    margin-top: 28px;
-}
-
   .content-item {
     border: 0;
   }
+  
   
   .content-item-container {
     margin-left: 0;
   }
 
   .conteint-item-title {
-    font-size: 24px;
+    color: #000;
+    font-family: 'Nico Moji';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
-  .content-item-description {
-    margin-left: -30px;
+  .content-item-description p{
+    color: #000;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -1px;
   }
 
   .course-rates {
@@ -963,14 +986,16 @@ body {
   }
 
   .course-rates-mobile .title {
-    color: #4512B7;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "JetBrains", monospace;
+    color: #000;
+    font-family: 'Nico Moji';
     font-size: 36px;
-    font-weight: 500;
-    line-height: 67.2px; /* 186.667% */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.08px;
   }
+
+
 
   .course-container {
     margin-top: 0;
@@ -980,7 +1005,13 @@ body {
   }
 
   .course-title {
+    color: #000;
+    font-family: Nico Moji;
     font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 156.25% */
+    text-decoration: none;
   }
   
   .course-description {
@@ -994,13 +1025,22 @@ body {
   }
 
   .course-btn {
-    width: 123px;
-    height: 41px;
-    padding: 0;
     display: flex;
-    align-items: center;
+    width: 162px;
+    height: 61px;
+    border-radius: 100px;
+    border: 3px solid #000;
+    padding: 0;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: 'Nico Moji';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 233.333% */
+    letter-spacing: -1px;
   }
 
   .image-col {
@@ -1023,16 +1063,18 @@ body {
 
   .course-p {
     margin-top: 5px;
-    opacity: 1;
-    font-weight: 500;
-  }
-
-  .line {
-    height: 3px;
-    background: #4512B7;
+    color: #000;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 176.471% */
+    letter-spacing: -1px;
   }
 
   .custom-footer {
+    background: #CDCDCD;
     padding: 37px 21px;
   }
 
@@ -1078,4 +1120,106 @@ body {
     justify-content: center;
     width: 80%;
   }
+
+  .question-container {
+    display: none !important;
+  }
+
+  .questions-mobile-container {
+    display: flex !important;
+    background: url('../assets/img/questionbgmobile.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px 20px;
+  }
+
+  .questions-title {
+    color: #000;
+    font-family: 'Nico Moji';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .questions-description {
+    color: #000;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 280% */
+    letter-spacing: -1px;
+  }
+
+  .contact-form .form-group label {
+    color: #000;
+    font-family: 'Nico Moji';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+  }
+
+
+  .contacts-container {
+    display: none !important;
+  }
+
+  .contacts-container-mobile {
+    display: flex !important;
+    background: url("../assets/img/contactsbgmobile.png");
+    height: 100vh;
+    padding: 40px;
+  }
+
+  .social-media-title {
+    color: #000;
+    font-family: 'Nico Moji';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .social-media-container p {
+    padding-bottom: 80px;
+  }
+
+  .modal-content {
+    background-image: url("../assets/img/modalmobilebg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .modal-title {
+    color: #000;
+    font-family: 'Nico Moji';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .close-btn {
+    position: absolute;
+    z-index: 2;
+    right: -10px;
+    top: 10px;
+  }
+
 }
